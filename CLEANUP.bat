@@ -1,0 +1,21 @@
+@echo off
+set "WORKDIR=%~dp0"
+cd /d "%WORKDIR%"
+rmdir /s /q "build"
+rmdir /s /q "dist"
+del /f /q "__pycache__"
+del /f /q "*.spec"
+del /f /q "PLAY_WAR_TEMP.py"
+del /f /q "build_wolf.py"
+del /f /q "diag.py"
+del /f /q "run_diag.bat"
+del /f /q "FINAL_BUILD.bat"
+del /f /q "debug_codes.py"
+del /f /q "debug_results.txt"
+del /f /q "generate_dict.py"
+del /f /q "update_live_sync.py"
+del /f /q "update_play_war.py"
+del /f /q "build_temp.bat"
+del /f /q "pyinstaller_log.txt"
+echo CLEANUP COMPLETE.
+pause
